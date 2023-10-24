@@ -1,4 +1,5 @@
 import { authOptions } from "@/auth"
+import CreateChatButton from "@/components/CreateChatButton"
 import UserButton from "@/components/UserButton"
 import DarkModeToggle from "@components/DarkModeToggle"
 import Logo from "@components/Logo"
@@ -23,6 +24,7 @@ const Header = async () => {
                                     className="text-black dark:text-white"
                                 />
                             </Link>
+                            <CreateChatButton />
                         </>
                     ) : (
                         <Link href={'/pricing'}>
